@@ -1,0 +1,56 @@
+{
+    "name": "alive2212/laravel-smart-meta",
+    "type": "library",
+    "description": "this is meta data for any model that working with cache",
+    "keywords": [
+        "Alive2212",
+        "LaravelSmartMeta"
+    ],
+    "homepage": "https://github.com/Alive2212/LaravelSmartMeta",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Babak Nodoust",
+            "email": "alive2212@yahoo.com",
+            "homepage": "http://babakn.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "illuminate/database" : "*",
+        "php" : "~5.6|~7.0"
+    },
+    "require-dev": {
+        "illuminate/support": "~5.1",
+        "illuminate/container" : "*",
+        "illuminate/database" : "*",
+        "phpunit/phpunit" : ">=5.4.3",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alive2212\\LaravelSmartMeta\\": "src",
+            "Alive2212\\LaravelSmartMetaTest\\": "tests"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alive2212\\LaravelSmartMeta\\": "src",
+            "Alive2212\\LaravelSmartMetaTest\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
