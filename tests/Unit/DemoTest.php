@@ -59,7 +59,7 @@ class DemoTest extends TestCase
 
         $model->setId(1);
         $model->setGlobalKey('test'.'_'.$model->getId());
-        $model->initCache();
+//        $model->initCache();
         $this->assertTrue($model->getId() == 1);
 
 //        $this->assertTrue($model->initCache()->getId() == 1);
