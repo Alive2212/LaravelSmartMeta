@@ -18,11 +18,13 @@
     ],
     "require": {
         "illuminate/support": "~5.1",
+        "illuminate/cache": "~5.1",
         "illuminate/database" : "*",
         "php" : "~5.6|~7.0"
     },
     "require-dev": {
         "illuminate/support": "~5.1",
+        "illuminate/cache": "~5.1",
         "illuminate/container" : "*",
         "illuminate/database" : "*",
         "phpunit/phpunit" : ">=5.4.3",

@@ -30,8 +30,9 @@ trait SmartMeta
         if(!($this->id>0)){
             $this->id = $this->toArray()['id'];
         }
-        get_class($this);
-        $this->globalKey = get_class($this) . '_' . $this->id;
+        if (is_null($this->globalKey)){
+            $this->globalKey = get_class($this) . '_' . $this->id;
+        }
         $this->getAllCacheMeta();
         return $this;
     }
