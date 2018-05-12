@@ -24,7 +24,8 @@ tests/
 Via Composer
 
 ``` bash
-$ composer require Alive2212/LaravelSmartMeta
+$ composer require alive2212/laravel-smart-meta
+
 ```
 
 ## Usage
